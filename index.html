@@ -7,9 +7,19 @@
         <title>AFRAME</title>
     </head>
     <body>
-
-
-
         <script src="aframe.min.js"></script>
+
+        <a-scene>
+          <a-assets>
+            <video id="video" src="20151207_083636.mp4"
+                   autoplay loop crossorigin></video>
+          </a-assets>
+
+          <a-videosphere src="#video" rotation="0 180 0"></a-videosphere>
+        </a-scene>
+
+        <script>
+          console.log(AFRAME);
+        </script>
     </body>
 </html>
